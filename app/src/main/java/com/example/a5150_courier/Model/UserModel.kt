@@ -9,5 +9,4 @@ class UserModel {
     var name = Firebase.auth.currentUser!!.displayName
 
 
-
 }

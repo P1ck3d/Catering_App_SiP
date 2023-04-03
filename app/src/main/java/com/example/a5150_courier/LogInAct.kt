@@ -19,52 +19,7 @@ class LogInAct : AppCompatActivity() {
     lateinit var providers:List<AuthUI.IdpConfig>
     final val AUTH_REQUEST_CODE = 5150
 
-       // override fun onStart() {
-          //  super.onStart()
-           // firebaseAuth.addAuthStateListener (listener)
-       // }
 
-       // override fun onStop() {
-          //  firebaseAuth.removeAuthStateListener(listener)
-           // super.onStop()
-        //}
-
-       // override fun onCreate(savedInstanceState: Bundle?) {
-         //   super.onCreate(savedInstanceState)
-         //   setContentView(R.layout.activity_log_in)
-
-         //   init()
-       // }
-
-      /*  private fun init(){
-            providers = arrayListOf(
-                AuthUI.IdpConfig.EmailBuilder().build(),
-                AuthUI.IdpConfig.PhoneBuilder().build(),
-                AuthUI.IdpConfig.GoogleBuilder().build()
-            )
-            firebaseAuth = FirebaseAuth.getInstance()
-            listener = object:FirebaseAuth.AuthStateListener{
-                override fun onAuthStateChanged(p0: FirebaseAuth) {
-                    val user = p0.currentUser
-                    if(user != null){
-                    }
-                    else{
-                        // Sign in failed. If response is null the user canceled the
-                        // sign-in flow using the back button. Otherwise check
-                        // response.getError().getErrorCode() and handle the error.
-                        // ...
-                        startActivityForResult(AuthUI.getInstance()
-                            .createSignInIntentBuilder()
-                            .setAvailableProviders(providers)
-                            .setLogo(R.drawable.cw_logo_1_)
-                            .setTheme(R.style.LoginTheme)
-                            .build(),AUTH_REQUEST_CODE)
-                    }
-                }
-            }
-
-        }
-}*/
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
           menuInflater.inflate(R.menu.main_menu, menu)
           return super.onCreateOptionsMenu(menu)
@@ -84,11 +39,7 @@ class LogInAct : AppCompatActivity() {
                 //finish()
             }
             return super.onOptionsItemSelected(item)}
-    /*private fun goToHomeActvity(userModel: UserModel?){
-        com.example.a5150_courier.Common.Common.currentUser = userModel!!
-        startActivity(Intent(this@LogInAct, HomeActivity::class.java))
-        finish()
-    }*/
+
     }
 
 

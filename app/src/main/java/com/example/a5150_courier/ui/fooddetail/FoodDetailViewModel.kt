@@ -9,10 +9,10 @@ import com.example.a5150_courier.Model.FoodModel
 class FoodDetailViewModel : ViewModel() {
 
     private var mutableLiveDataFood:MutableLiveData<FoodModel>?=null
-    //private var mutableLiveDataComment:MutableLiveData<CommentModel>?=null
+
 
     init {
-       // mutableLiveDataComment = MutableLiveData()
+
     }
 
     fun getMutableLiveDataFood():MutableLiveData<FoodModel>{
@@ -22,16 +22,6 @@ class FoodDetailViewModel : ViewModel() {
         return mutableLiveDataFood!!
     }
 
-    /*fun getMutableLiveDataComment():MutableLiveData<CommentModel>{
-        if (mutableLiveDataComment == null)
-            mutableLiveDataComment = MutableLiveData()
-        return mutableLiveDataComment!!
-    }*/
-
-    /*fun setCommentModel(commentModel: CommentModel) {
-        if(mutableLiveDataComment != null)
-            mutableLiveDataComment!!.value = (commentModel)
-    }*/
 
     fun setFoodModel(foodModel: FoodModel) {
         if (mutableLiveDataFood != null)

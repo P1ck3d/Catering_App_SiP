@@ -269,37 +269,6 @@ class HomeActivity : AppCompatActivity() {
     }
 
 
-
-
-
-
-
-    /* fun getUserProfile(){
-        val user = Firebase.auth.currentUser
-        user?.let {
-            // Name, email address, and profile photo Url
-            val name = user.displayName
-            val email = user.email
-            val photoUrl = user.photoUrl
-
-            // Check if user's email is verified
-            val emailVerified = user.isEmailVerified
-
-            // The user's ID, unique to the Firebase project. Do NOT use this value to
-            // authenticate with your backend server, if you have one. Use
-            // FirebaseUser.getToken() instead.
-            val uid = user.uid
-    }
-
-        val userModel = UserModel()
-        userModel.uid = user!!.uid
-        userModel.name = user!!.displayName
-        userRef!!.child(user!!.uid)
-            //.setValue(UserModel)
-    }*/
-
-
-
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.home, menu)
@@ -443,13 +412,6 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
-    /*fun signOut() {
-        // [START auth_fui_signout]
-        AuthUI.getInstance()
-            .signOut(this)
-            .addOnCompleteListener {
-            }// ...
-    }*/
 
     private fun signOut() {
         // [START auth_fui_signout]
